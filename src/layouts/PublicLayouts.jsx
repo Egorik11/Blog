@@ -1,14 +1,11 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import { Header } from '../components/Header/Header'
 
 function PublicLayouts() {
   return (
     <>
-      <header>
-      <Link to="/">Home</Link>
-      <Link to="/About">About</Link>
-      <Link to="/NotFound">NotFound</Link>
-      </header>
-
+      <Header />
+      
       <Outlet />
 
       <footer>

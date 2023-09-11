@@ -1,0 +1,12 @@
+.navlist {
+  width: 307px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 680px) {
+  .navlist {
+    padding-bottom: 30px;
+  }
+}
