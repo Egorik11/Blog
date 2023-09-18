@@ -1,11 +1,18 @@
-import styles from './Navlist.module.scss'
+import {styled} from "styled-components"
 
-function Navlist({children}) {
+const Ul = styled.ul`
+  width: 307px;
+  display: ${(props => props.menu ? 'block': 'flex')};
+  justify-content: space-between;
+  align-items: center;
+`;
+
+function Navlist({children, menu}) {
   return (
     <nav>
-      <ul className={styles.navlist}>
+      <Ul menu={menu}>
         {children}
-      </ul>
+      </Ul>
     </nav>
   )
 }
