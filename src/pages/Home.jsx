@@ -10,7 +10,6 @@ import { Preloader } from '../components/Preloader'
 function Home() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false)
-  const lenghtPosts = 6;
 
   useEffect(()=> {
     const apiKey = '2rM7mpb8JhDVg-T1BUfuSR8yr3_TDhxeWMCgsemVMb0';
@@ -24,13 +23,16 @@ function Home() {
       }
     })
     .then(res => setData(res.data))
+    .catch(error => {
+      console.error(error.message)
+    })
   }, [])
 
   return (
     <>
       <Hero />
       {isLoading ? <Postlist>
-        {data.slice(0,lenghtPosts).map((el) => (
+        {data.map((el) => (
           <Postitem key={el.id} img={el.urls.small_s3} />
         ))}
       </Postlist> : <Preloader/>}
