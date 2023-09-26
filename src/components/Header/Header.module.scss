@@ -45,23 +45,3 @@
     }
   }
 }
-
-@media (max-width: 1000px) {
-  .header_container {
-    flex-direction: column;
-  }
-
-  .navAction {
-    padding-top: 30px;
-  }
-}
-
-@media (max-width: 680px) {
-  .navAction {
-    flex-direction: column;
-  }
-
-  .action {
-    margin-left: 0px !important;
-  }
-}
