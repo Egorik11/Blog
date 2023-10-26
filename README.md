@@ -1,8 +1,5 @@
-# React + Vite
+My-Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing Page is written in React, using components: Header, NavList NavItem Hero Cta Postlist Postitem Footer.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+With the help of Axios a request to the server was made. For this purpose the useEffect and useState hooks were used and the emotion library was plugged into the project.
